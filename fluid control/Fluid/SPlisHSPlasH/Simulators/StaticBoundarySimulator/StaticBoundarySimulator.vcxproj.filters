@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Fluid\SPlisHSPlasH\Simulators\StaticBoundarySimulator\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Fluid\SPlisHSPlasH\Simulators\Common\SimulatorBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Fluid\SPlisHSPlasH\Simulators\Common\TweakBarParameters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Fluid\SPlisHSPlasH\Visualization\MiniGL.cpp">
+      <Filter>Source Files\Visualization</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Fluid\SPlisHSPlasH\Visualization\Shader.cpp">
+      <Filter>Source Files\Visualization</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Fluid\SPlisHSPlasH\Simulators\Common\SimulatorBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Fluid\SPlisHSPlasH\Simulators\Common\TweakBarParameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Fluid\SPlisHSPlasH\Visualization\MiniGL.h">
+      <Filter>Header Files\Visualization</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Fluid\SPlisHSPlasH\Visualization\Selection.h">
+      <Filter>Header Files\Visualization</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Fluid\SPlisHSPlasH\Visualization\Shader.h">
+      <Filter>Header Files\Visualization</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Fluid\SPlisHSPlasH\Visualization\colormaps\colormap_jet.h">
+      <Filter>Header Files\Visualization</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Fluid\SPlisHSPlasH\Visualization\colormaps\colormap_plasma.h">
+      <Filter>Header Files\Visualization</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Fluid\SPlisHSPlasH\Simulators\StaticBoundarySimulator\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1FE3EB9D-9FD7-3E60-990F-0B4C1E496C56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Visualization">
+      <UniqueIdentifier>{5D2F80B8-8622-3718-B994-FB5385A918AD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{24CB88AE-8F46-31EE-B840-866FA11FA63A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Visualization">
+      <UniqueIdentifier>{01EC8E7D-37E0-3118-803C-F202FB37FC7F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

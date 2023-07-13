@@ -1,0 +1,16 @@
+﻿  Building Custom Rule D:/Fluid/SPlisHSPlasH/Simulators/DynamicBoundarySimulator/CMakeLists.txt
+  main.cpp
+  SimulatorBase.cpp
+  TweakBarParameters.cpp
+  MiniGL.cpp
+  Shader.cpp
+  PBDWrapper.cpp
+D:\Fluid\SPlisHSPlasH\SPlisHSPlasH/Simulation.h(3,1): warning C4005: “_CONTROL”: 宏重定义 (编译源文件 D:\Fluid\SPlisHSPlasH\Simulators\Common\SimulatorBase.cpp)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wctype.h(49): message : 参见“_CONTROL”的前一个定义 (编译源文件 D:\Fluid\SPlisHSPlasH\Simulators\Common\SimulatorBase.cpp)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\FreeImage.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 D:\Fluid\SPlisHSPlasH\Simulators\Common\SimulatorBase.cpp)
+D:\Fluid\SPlisHSPlasH\SPlisHSPlasH/Simulation.h(3,1): warning C4005: “_CONTROL”: 宏重定义 (编译源文件 D:\Fluid\SPlisHSPlasH\Simulators\DynamicBoundarySimulator\main.cpp)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wctype.h(49): message : 参见“_CONTROL”的前一个定义 (编译源文件 D:\Fluid\SPlisHSPlasH\Simulators\DynamicBoundarySimulator\main.cpp)
+D:\Fluid\SPlisHSPlasH\Simulators\Common\SimulatorBase.cpp(936,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\Fluid\SPlisHSPlasH\Simulators\Common\SimulatorBase.cpp(939,21): warning C4018: “<”: 有符号/无符号不匹配
+    正在创建库 D:/Fluid/SPlisHSPlasH/Simulators/DynamicBoundarySimulator/Release/DynamicBoundarySimulator.lib 和对象 D:/Fluid/SPlisHSPlasH/Simulators/DynamicBoundarySimulator/Release/DynamicBoundarySimulator.exp
+  DynamicBoundarySimulator.vcxproj -> D:\Fluid\SPlisHSPlasH\bin\DynamicBoundarySimulator.exe

@@ -1,0 +1,10 @@
+^D:\FLUID\SPLISHSPLASH\SIMULATORS\STATICBOUNDARYSIMULATOR\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Fluid/SPlisHSPlasH -BD:/Fluid/SPlisHSPlasH --check-stamp-file D:/Fluid/SPlisHSPlasH/Simulators/StaticBoundarySimulator/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

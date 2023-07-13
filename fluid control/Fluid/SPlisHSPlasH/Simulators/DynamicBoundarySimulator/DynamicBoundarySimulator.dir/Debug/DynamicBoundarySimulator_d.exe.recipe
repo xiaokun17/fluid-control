@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\Fluid\SPlisHSPlasH\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Fluid\SPlisHSPlasH\x64\Debug\Ext_GenericParameters</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Fluid\SPlisHSPlasH\x64\Debug\Ext_NeighborhoodSearch</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Fluid\SPlisHSPlasH\x64\Debug\Ext_PBD</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Fluid\SPlisHSPlasH\bin\freeglut_d.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Fluid\SPlisHSPlasH\bin\glew_d.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Fluid\SPlisHSPlasH\bin\DynamicBoundarySimulator_d.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

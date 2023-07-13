@@ -1,0 +1,5 @@
+﻿  TimeStepPBF.cpp
+D:\Fluid\SPlisHSPlasH\SPlisHSPlasH/Simulation.h(3,1): warning C4005: “_CONTROL”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wctype.h(49): message : 参见“_CONTROL”的前一个定义
+D:\Fluid\SPlisHSPlasH\SPlisHSPlasH\PBF\TimeStepPBF.cpp(610,32): warning C4018: “<”: 有符号/无符号不匹配
+  SPlisHSPlasH.vcxproj -> D:\Fluid\SPlisHSPlasH\lib\Release\SPlisHSPlasH.lib

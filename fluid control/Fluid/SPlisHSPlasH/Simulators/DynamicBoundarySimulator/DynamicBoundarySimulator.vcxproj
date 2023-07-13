@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3536EBD9-F7FA-369E-BAF6-CC8C93DA29C8}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>DynamicBoundarySimulator</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Fluid\SPlisHSPlasH\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">DynamicBoundarySimulator.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">DynamicBoundarySimulator_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Fluid\SPlisHSPlasH\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">DynamicBoundarySimulator.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">DynamicBoundarySimulator</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Fluid\SPlisHSPlasH\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">DynamicBoundarySimulator.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">DynamicBoundarySimulator_ms</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Fluid\SPlisHSPlasH\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">DynamicBoundarySimulator.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">DynamicBoundarySimulator_rd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Fluid\SPlisHSPlasH;D:\Fluid\SPlisHSPlasH\extern\freeglut\include;D:\Fluid\SPlisHSPlasH\extern\eigen;D:\Fluid\SPlisHSPlasH\extern\install\NeighborhoodSearch\include;D:\Fluid\SPlisHSPlasH\extern\install\GenericParameters\include;D:\Fluid\SPlisHSPlasH\extern\install\PositionBasedDynamics\include;D:\Fluid\SPlisHSPlasH\extern\install\Discregrid\include;D:\Fluid\SPlisHSPlasH\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;SPH_DATA_PATH="../data";USE_DOUBLE;PBD_DATA_PATH="../data";USE_PBD;PBD_DATA_PATH="D:/Fluid/SPlisHSPlasH/extern/install/PositionBasedDynamics/include/data";TW_NO_LIB_PRAGMA;TW_STATIC;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;SPH_DATA_PATH=\"../data\";USE_DOUBLE;PBD_DATA_PATH=\"../data\";USE_PBD;PBD_DATA_PATH=\"D:/Fluid/SPlisHSPlasH/extern/install/PositionBasedDynamics/include/data\";TW_NO_LIB_PRAGMA;TW_STATIC;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Fluid\SPlisHSPlasH;D:\Fluid\SPlisHSPlasH\extern\freeglut\include;D:\Fluid\SPlisHSPlasH\extern\eigen;D:\Fluid\SPlisHSPlasH\extern\install\NeighborhoodSearch\include;D:\Fluid\SPlisHSPlasH\extern\install\GenericParameters\include;D:\Fluid\SPlisHSPlasH\extern\install\PositionBasedDynamics\include;D:\Fluid\SPlisHSPlasH\extern\install\Discregrid\include;D:\Fluid\SPlisHSPlasH\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Fluid\SPlisHSPlasH;D:\Fluid\SPlisHSPlasH\extern\freeglut\include;D:\Fluid\SPlisHSPlasH\extern\eigen;D:\Fluid\SPlisHSPlasH\extern\install\NeighborhoodSearch\include;D:\Fluid\SPlisHSPlasH\extern\install\GenericParameters\include;D:\Fluid\SPlisHSPlasH\extern\install\PositionBasedDynamics\include;D:\Fluid\SPlisHSPlasH\extern\install\Discregrid\include;D:\Fluid\SPlisHSPlasH\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>	</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/Fluid/SPlisHSPlasH/data/shaders D:/Fluid/SPlisHSPlasH/bin/resources/shaders
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/Fluid/SPlisHSPlasH/extern/install/PositionBasedDynamics/include/data/shaders D:/Fluid/SPlisHSPlasH/bin/resources/pbd_shaders
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Debug\freeglut_d.lib;opengl32.lib;glu32.lib;..\..\lib\Debug\Utilities_d.lib;..\..\lib\Debug\AntTweakBar_d.lib;..\..\lib\Debug\glew_d.lib;..\..\lib\Debug\partio_d.lib;..\..\lib\Debug\zlib_d.lib;..\..\lib\Debug\SPlisHSPlasH_d.lib;..\..\lib\Debug\MD5_d.lib;CompactNSearch_d.lib;Discregrid_d.lib;Simulation_d.lib;PositionBasedDynamics_d.lib;Utils_d.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Fluid/SPlisHSPlasH/extern/install/NeighborhoodSearch/lib;D:/Fluid/SPlisHSPlasH/extern/install/NeighborhoodSearch/lib/$(Configuration);D:/Fluid/SPlisHSPlasH/extern/install/Discregrid/lib;D:/Fluid/SPlisHSPlasH/extern/install/Discregrid/lib/$(Configuration);D:/Fluid/SPlisHSPlasH/extern/install/PositionBasedDynamics/lib;D:/Fluid/SPlisHSPlasH/extern/install/PositionBasedDynamics/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Fluid/SPlisHSPlasH/Simulators/DynamicBoundarySimulator/Debug/DynamicBoundarySimulator_d.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Fluid/SPlisHSPlasH/bin/DynamicBoundarySimulator_d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Fluid\SPlisHSPlasH;D:\Fluid\SPlisHSPlasH\extern\freeglut\include;D:\Fluid\SPlisHSPlasH\extern\eigen;D:\Fluid\SPlisHSPlasH\extern\install\NeighborhoodSearch\include;D:\Fluid\SPlisHSPlasH\extern\install\GenericParameters\include;D:\Fluid\SPlisHSPlasH\extern\install\PositionBasedDynamics\include;D:\Fluid\SPlisHSPlasH\extern\install\Discregrid\include;D:\Fluid\SPlisHSPlasH\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;SPH_DATA_PATH="../data";USE_DOUBLE;PBD_DATA_PATH="../data";USE_PBD;PBD_DATA_PATH="D:/Fluid/SPlisHSPlasH/extern/install/PositionBasedDynamics/include/data";TW_NO_LIB_PRAGMA;TW_STATIC;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;SPH_DATA_PATH=\"../data\";USE_DOUBLE;PBD_DATA_PATH=\"../data\";USE_PBD;PBD_DATA_PATH=\"D:/Fluid/SPlisHSPlasH/extern/install/PositionBasedDynamics/include/data\";TW_NO_LIB_PRAGMA;TW_STATIC;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Fluid\SPlisHSPlasH;D:\Fluid\SPlisHSPlasH\extern\freeglut\include;D:\Fluid\SPlisHSPlasH\extern\eigen;D:\Fluid\SPlisHSPlasH\extern\install\NeighborhoodSearch\include;D:\Fluid\SPlisHSPlasH\extern\install\GenericParameters\include;D:\Fluid\SPlisHSPlasH\extern\install\PositionBasedDynamics\include;D:\Fluid\SPlisHSPlasH\extern\install\Discregrid\include;D:\Fluid\SPlisHSPlasH\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Fluid\SPlisHSPlasH;D:\Fluid\SPlisHSPlasH\extern\freeglut\include;D:\Fluid\SPlisHSPlasH\extern\eigen;D:\Fluid\SPlisHSPlasH\extern\install\NeighborhoodSearch\include;D:\Fluid\SPlisHSPlasH\extern\install\GenericParameters\include;D:\Fluid\SPlisHSPlasH\extern\install\PositionBasedDynamics\include;D:\Fluid\SPlisHSPlasH\extern\install\Discregrid\include;D:\Fluid\SPlisHSPlasH\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>	</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/Fluid/SPlisHSPlasH/data/shaders D:/Fluid/SPlisHSPlasH/bin/resources/shaders
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/Fluid/SPlisHSPlasH/extern/install/PositionBasedDynamics/include/data/shaders D:/Fluid/SPlisHSPlasH/bin/resources/pbd_shaders
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Release\freeglut.lib;opengl32.lib;glu32.lib;..\..\lib\Release\Utilities.lib;..\..\lib\Release\AntTweakBar.lib;..\..\lib\Release\glew.lib;..\..\lib\Release\partio.lib;..\..\lib\Release\zlib.lib;..\..\lib\Release\SPlisHSPlasH.lib;..\..\lib\Release\MD5.lib;CompactNSearch.lib;Discregrid.lib;Simulation.lib;PositionBasedDynamics.lib;Utils.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Fluid/SPlisHSPlasH/extern/install/NeighborhoodSearch/lib;D:/Fluid/SPlisHSPlasH/extern/install/NeighborhoodSearch/lib/$(Configuration);D:/Fluid/SPlisHSPlasH/extern/install/Discregrid/lib;D:/Fluid/SPlisHSPlasH/extern/install/Discregrid/lib/$(Configuration);D:/Fluid/SPlisHSPlasH/extern/install/PositionBasedDynamics/lib;D:/Fluid/SPlisHSPlasH/extern/install/PositionBasedDynamics/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Fluid/SPlisHSPlasH/Simulators/DynamicBoundarySimulator/Release/DynamicBoundarySimulator.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Fluid/SPlisHSPlasH/bin/DynamicBoundarySimulator.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Fluid\SPlisHSPlasH;D:\Fluid\SPlisHSPlasH\extern\freeglut\include;D:\Fluid\SPlisHSPlasH\extern\eigen;D:\Fluid\SPlisHSPlasH\extern\install\NeighborhoodSearch\include;D:\Fluid\SPlisHSPlasH\extern\install\GenericParameters\include;D:\Fluid\SPlisHSPlasH\extern\install\PositionBasedDynamics\include;D:\Fluid\SPlisHSPlasH\extern\install\Discregrid\include;D:\Fluid\SPlisHSPlasH\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;SPH_DATA_PATH="../data";USE_DOUBLE;PBD_DATA_PATH="../data";USE_PBD;PBD_DATA_PATH="D:/Fluid/SPlisHSPlasH/extern/install/PositionBasedDynamics/include/data";TW_NO_LIB_PRAGMA;TW_STATIC;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;SPH_DATA_PATH=\"../data\";USE_DOUBLE;PBD_DATA_PATH=\"../data\";USE_PBD;PBD_DATA_PATH=\"D:/Fluid/SPlisHSPlasH/extern/install/PositionBasedDynamics/include/data\";TW_NO_LIB_PRAGMA;TW_STATIC;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Fluid\SPlisHSPlasH;D:\Fluid\SPlisHSPlasH\extern\freeglut\include;D:\Fluid\SPlisHSPlasH\extern\eigen;D:\Fluid\SPlisHSPlasH\extern\install\NeighborhoodSearch\include;D:\Fluid\SPlisHSPlasH\extern\install\GenericParameters\include;D:\Fluid\SPlisHSPlasH\extern\install\PositionBasedDynamics\include;D:\Fluid\SPlisHSPlasH\extern\install\Discregrid\include;D:\Fluid\SPlisHSPlasH\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Fluid\SPlisHSPlasH;D:\Fluid\SPlisHSPlasH\extern\freeglut\include;D:\Fluid\SPlisHSPlasH\extern\eigen;D:\Fluid\SPlisHSPlasH\extern\install\NeighborhoodSearch\include;D:\Fluid\SPlisHSPlasH\extern\install\GenericParameters\include;D:\Fluid\SPlisHSPlasH\extern\install\PositionBasedDynamics\include;D:\Fluid\SPlisHSPlasH\extern\install\Discregrid\include;D:\Fluid\SPlisHSPlasH\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>	</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/Fluid/SPlisHSPlasH/data/shaders D:/Fluid/SPlisHSPlasH/bin/resources/shaders
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/Fluid/SPlisHSPlasH/extern/install/PositionBasedDynamics/include/data/shaders D:/Fluid/SPlisHSPlasH/bin/resources/pbd_shaders
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\lib\MinSizeRel\freeglut_ms.lib;opengl32.lib;glu32.lib;..\..\lib\MinSizeRel\Utilities_ms.lib;..\..\lib\MinSizeRel\AntTweakBar_ms.lib;..\..\lib\MinSizeRel\glew_ms.lib;..\..\lib\MinSizeRel\partio_ms.lib;..\..\lib\MinSizeRel\zlib_ms.lib;..\..\lib\MinSizeRel\SPlisHSPlasH_ms.lib;..\..\lib\MinSizeRel\MD5_ms.lib;CompactNSearch.lib;Discregrid.lib;Simulation.lib;PositionBasedDynamics.lib;Utils.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Fluid/SPlisHSPlasH/extern/install/NeighborhoodSearch/lib;D:/Fluid/SPlisHSPlasH/extern/install/NeighborhoodSearch/lib/$(Configuration);D:/Fluid/SPlisHSPlasH/extern/install/Discregrid/lib;D:/Fluid/SPlisHSPlasH/extern/install/Discregrid/lib/$(Configuration);D:/Fluid/SPlisHSPlasH/extern/install/PositionBasedDynamics/lib;D:/Fluid/SPlisHSPlasH/extern/install/PositionBasedDynamics/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Fluid/SPlisHSPlasH/Simulators/DynamicBoundarySimulator/MinSizeRel/DynamicBoundarySimulator_ms.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Fluid/SPlisHSPlasH/bin/DynamicBoundarySimulator_ms.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Fluid\SPlisHSPlasH;D:\Fluid\SPlisHSPlasH\extern\freeglut\include;D:\Fluid\SPlisHSPlasH\extern\eigen;D:\Fluid\SPlisHSPlasH\extern\install\NeighborhoodSearch\include;D:\Fluid\SPlisHSPlasH\extern\install\GenericParameters\include;D:\Fluid\SPlisHSPlasH\extern\install\PositionBasedDynamics\include;D:\Fluid\SPlisHSPlasH\extern\install\Discregrid\include;D:\Fluid\SPlisHSPlasH\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;SPH_DATA_PATH="../data";USE_DOUBLE;PBD_DATA_PATH="../data";USE_PBD;PBD_DATA_PATH="D:/Fluid/SPlisHSPlasH/extern/install/PositionBasedDynamics/include/data";TW_NO_LIB_PRAGMA;TW_STATIC;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;SPH_DATA_PATH=\"../data\";USE_DOUBLE;PBD_DATA_PATH=\"../data\";USE_PBD;PBD_DATA_PATH=\"D:/Fluid/SPlisHSPlasH/extern/install/PositionBasedDynamics/include/data\";TW_NO_LIB_PRAGMA;TW_STATIC;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Fluid\SPlisHSPlasH;D:\Fluid\SPlisHSPlasH\extern\freeglut\include;D:\Fluid\SPlisHSPlasH\extern\eigen;D:\Fluid\SPlisHSPlasH\extern\install\NeighborhoodSearch\include;D:\Fluid\SPlisHSPlasH\extern\install\GenericParameters\include;D:\Fluid\SPlisHSPlasH\extern\install\PositionBasedDynamics\include;D:\Fluid\SPlisHSPlasH\extern\install\Discregrid\include;D:\Fluid\SPlisHSPlasH\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Fluid\SPlisHSPlasH;D:\Fluid\SPlisHSPlasH\extern\freeglut\include;D:\Fluid\SPlisHSPlasH\extern\eigen;D:\Fluid\SPlisHSPlasH\extern\install\NeighborhoodSearch\include;D:\Fluid\SPlisHSPlasH\extern\install\GenericParameters\include;D:\Fluid\SPlisHSPlasH\extern\install\PositionBasedDynamics\include;D:\Fluid\SPlisHSPlasH\extern\install\Discregrid\include;D:\Fluid\SPlisHSPlasH\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>	</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/Fluid/SPlisHSPlasH/data/shaders D:/Fluid/SPlisHSPlasH/bin/resources/shaders
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/Fluid/SPlisHSPlasH/extern/install/PositionBasedDynamics/include/data/shaders D:/Fluid/SPlisHSPlasH/bin/resources/pbd_shaders
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\lib\RelWithDebInfo\freeglut_rd.lib;opengl32.lib;glu32.lib;..\..\lib\RelWithDebInfo\Utilities_rd.lib;..\..\lib\RelWithDebInfo\AntTweakBar_rd.lib;..\..\lib\RelWithDebInfo\glew_rd.lib;..\..\lib\RelWithDebInfo\partio_rd.lib;..\..\lib\RelWithDebInfo\zlib_rd.lib;..\..\lib\RelWithDebInfo\SPlisHSPlasH_rd.lib;..\..\lib\RelWithDebInfo\MD5_rd.lib;CompactNSearch.lib;Discregrid.lib;Simulation.lib;PositionBasedDynamics.lib;Utils.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Fluid/SPlisHSPlasH/extern/install/NeighborhoodSearch/lib;D:/Fluid/SPlisHSPlasH/extern/install/NeighborhoodSearch/lib/$(Configuration);D:/Fluid/SPlisHSPlasH/extern/install/Discregrid/lib;D:/Fluid/SPlisHSPlasH/extern/install/Discregrid/lib/$(Configuration);D:/Fluid/SPlisHSPlasH/extern/install/PositionBasedDynamics/lib;D:/Fluid/SPlisHSPlasH/extern/install/PositionBasedDynamics/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Fluid/SPlisHSPlasH/Simulators/DynamicBoundarySimulator/RelWithDebInfo/DynamicBoundarySimulator_rd.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Fluid/SPlisHSPlasH/bin/DynamicBoundarySimulator_rd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Fluid\SPlisHSPlasH\Simulators\DynamicBoundarySimulator\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Fluid/SPlisHSPlasH/Simulators/DynamicBoundarySimulator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Fluid/SPlisHSPlasH -BD:/Fluid/SPlisHSPlasH --check-stamp-file D:/Fluid/SPlisHSPlasH/Simulators/DynamicBoundarySimulator/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Fluid\SPlisHSPlasH\CMake\FindEigen3.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Fluid\SPlisHSPlasH\Simulators\DynamicBoundarySimulator\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Fluid/SPlisHSPlasH/Simulators/DynamicBoundarySimulator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Fluid/SPlisHSPlasH -BD:/Fluid/SPlisHSPlasH --check-stamp-file D:/Fluid/SPlisHSPlasH/Simulators/DynamicBoundarySimulator/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Fluid\SPlisHSPlasH\CMake\FindEigen3.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Fluid\SPlisHSPlasH\Simulators\DynamicBoundarySimulator\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Fluid/SPlisHSPlasH/Simulators/DynamicBoundarySimulator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Fluid/SPlisHSPlasH -BD:/Fluid/SPlisHSPlasH --check-stamp-file D:/Fluid/SPlisHSPlasH/Simulators/DynamicBoundarySimulator/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Fluid\SPlisHSPlasH\CMake\FindEigen3.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Fluid\SPlisHSPlasH\Simulators\DynamicBoundarySimulator\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Fluid/SPlisHSPlasH/Simulators/DynamicBoundarySimulator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Fluid/SPlisHSPlasH -BD:/Fluid/SPlisHSPlasH --check-stamp-file D:/Fluid/SPlisHSPlasH/Simulators/DynamicBoundarySimulator/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Fluid\SPlisHSPlasH\CMake\FindEigen3.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Fluid\SPlisHSPlasH\Simulators\DynamicBoundarySimulator\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Fluid\SPlisHSPlasH\Simulators\DynamicBoundarySimulator\main.cpp" />
+    <ClCompile Include="D:\Fluid\SPlisHSPlasH\Simulators\Common\SimulatorBase.cpp" />
+    <ClInclude Include="D:\Fluid\SPlisHSPlasH\Simulators\Common\SimulatorBase.h" />
+    <ClCompile Include="D:\Fluid\SPlisHSPlasH\Simulators\Common\TweakBarParameters.cpp" />
+    <ClInclude Include="D:\Fluid\SPlisHSPlasH\Simulators\Common\TweakBarParameters.h" />
+    <ClInclude Include="D:\Fluid\SPlisHSPlasH\Visualization\MiniGL.h" />
+    <ClInclude Include="D:\Fluid\SPlisHSPlasH\Visualization\Selection.h" />
+    <ClInclude Include="D:\Fluid\SPlisHSPlasH\Visualization\Shader.h" />
+    <ClInclude Include="D:\Fluid\SPlisHSPlasH\Visualization\colormaps\colormap_jet.h" />
+    <ClInclude Include="D:\Fluid\SPlisHSPlasH\Visualization\colormaps\colormap_plasma.h" />
+    <ClCompile Include="D:\Fluid\SPlisHSPlasH\Visualization\MiniGL.cpp" />
+    <ClCompile Include="D:\Fluid\SPlisHSPlasH\Visualization\Shader.cpp" />
+    <ClCompile Include="D:\Fluid\SPlisHSPlasH\Simulators\DynamicBoundarySimulator\PositionBasedDynamicsWrapper\PBDWrapper.cpp" />
+    <ClInclude Include="D:\Fluid\SPlisHSPlasH\Simulators\DynamicBoundarySimulator\PositionBasedDynamicsWrapper\PBDWrapper.h" />
+    <ClInclude Include="D:\Fluid\SPlisHSPlasH\Simulators\DynamicBoundarySimulator\PositionBasedDynamicsWrapper\PBDRigidBody.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Fluid\SPlisHSPlasH\ZERO_CHECK.vcxproj">
+      <Project>{5F9455F5-2D06-31DB-8B5F-5E921680BC2C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Fluid\SPlisHSPlasH\extern\AntTweakBar\AntTweakBar.vcxproj">
+      <Project>{D1E270B9-9EBA-369F-9D1D-D1403D3C6749}</Project>
+      <Name>AntTweakBar</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Fluid\SPlisHSPlasH\Ext_GenericParameters.vcxproj">
+      <Project>{04A81B01-8AB3-3E35-B7BB-94292B7AA85D}</Project>
+      <Name>Ext_GenericParameters</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Fluid\SPlisHSPlasH\Ext_NeighborhoodSearch.vcxproj">
+      <Project>{796F7606-3186-3732-A0C0-0D5BB8969EFF}</Project>
+      <Name>Ext_NeighborhoodSearch</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Fluid\SPlisHSPlasH\Ext_PBD.vcxproj">
+      <Project>{35E97E8E-596A-36FC-8A31-B41C9630DF6E}</Project>
+      <Name>Ext_PBD</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Fluid\SPlisHSPlasH\extern\md5\MD5.vcxproj">
+      <Project>{9BFD9A6F-EC82-337A-A58C-DD64BA2673F2}</Project>
+      <Name>MD5</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Fluid\SPlisHSPlasH\SPlisHSPlasH\SPlisHSPlasH.vcxproj">
+      <Project>{2CA5A8AE-1B53-3946-91BD-5F3F94F2499A}</Project>
+      <Name>SPlisHSPlasH</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Fluid\SPlisHSPlasH\Utilities\Utilities.vcxproj">
+      <Project>{9B2091F4-9003-3055-84EC-80CE7488CB00}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Fluid\SPlisHSPlasH\extern\freeglut\src\freeglut.vcxproj">
+      <Project>{B6755F1E-0CE2-361B-82CB-5856057AF1DE}</Project>
+      <Name>freeglut</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Fluid\SPlisHSPlasH\extern\glew\glew.vcxproj">
+      <Project>{CE1FE7A0-CD7D-387B-A1AA-D98A1B03AD7F}</Project>
+      <Name>glew</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Fluid\SPlisHSPlasH\extern\partio\src\lib\partio.vcxproj">
+      <Project>{0453E785-E949-368C-A6CC-CFC0BE4EFD17}</Project>
+      <Name>partio</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Fluid\SPlisHSPlasH\extern\zlib\zlib.vcxproj">
+      <Project>{2CD5F6B9-EDC2-3893-AF3E-16827EE7049F}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
